@@ -16,3 +16,7 @@ I<sub>7</sub> = { x > 300 and y > 300 and z > 300 } (All inputs are invalid) </b
 I<sub>8</sub> = { x > 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) </br>
 I<sub>9</sub> = { 1 ≤ x ≤ 300 and y > 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid) </br>
 I<sub>10</sub> = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z > 300 } (z is invalid , x is valid and y is valid) </br>
+I<sub>10</sub> = { x < 1 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
+
+
+I<sub>X</sub> = { x < 1 and 1 ≤ y ≤ 300 and x > 300 } (x is invalid and z is invalid, y is valid) </br>
