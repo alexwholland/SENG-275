@@ -49,3 +49,40 @@ public class FizzBuzz {
 To detemine the tests that can be removed we can use Test Suite Minimization.
 
 **d)**
+```
+import org.junit.Assert;
+import org.junit.Test;
+
+public class FizzBuzzTesting {
+    FizzBuzz fb = new FizzBuzz();
+
+    @Test
+    public void testFizzBuzz(){
+        String expected = "FizzBuzz"; 
+        String actual = fb.detFizzBuzz(15);
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void testFizz(){
+        String expected = "Fizz!";
+        String actual = fb.detFizzBuzz(3);
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void testBuzz(){
+        String expected = "Buzz!";
+        String actual = fb.detFizzBuzz(5);
+        Assert.assertEquals(actual, expected);
+    }
+    
+    @Test
+    public void testInteger(){
+        String expected = "4!";
+        String actual = fb.detFizzBuzz(4);
+        Assert.assertEquals(actual, expected);
+    }
+    
+}
+```
