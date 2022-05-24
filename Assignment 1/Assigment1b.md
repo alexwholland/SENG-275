@@ -24,7 +24,7 @@ I<sub>X</sub> = { x < 1 and 1 ≤ y ≤ 300 and x > 300 } (x is invalid and z is
 
 ```
 public class FizzBuzz {
-  plubic staic String FizzBuzz(int n) {
+  plubic staic String detFizzBuzz(int n) {
     String result;
     if (n % 3 == 0 && n % 5 == 0)
       result = "FizzBuzz";
@@ -86,3 +86,16 @@ public class FizzBuzzTesting {
     
 }
 ```
+
+**Q3)**
+
+**a)**
+
+T<sub>1</sub> = I = 1 </br>
+T<sub>2</sub> = XXXI = 31</br>
+T<sub>3</sub> = CCXCIV = 294</br>
+T<sub>4</sub> = MDCLVIII = 1658</br>
+T<sub>5</sub> = MCMXCIV = 1994 </br>
+T<sub>6</sub> = MMMCMXCIX = 3999 </br>
+
+
