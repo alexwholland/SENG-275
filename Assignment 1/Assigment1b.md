@@ -98,4 +98,48 @@ T<sub>4</sub> = MDCLVIII = 1658</br>
 T<sub>5</sub> = MCMXCIV = 1994 </br>
 T<sub>6</sub> = MMMCMXCIX = 3999 </br>
 
+**b**
+
+```
+import org.junit.Assert;
+import org.junit.Test;
+
+public class RomanNumeralTesting {
+    RomanNumeral rn = new RomanNumeral();
+
+    @Test
+    public void test1(){
+        int expected = 1;
+        int actual = rn.convert("I");
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void test2(){
+        int expected = 31;
+        int actual = rn.convert("XXXI");
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void test3(){
+        int expected = 294;
+        int actual = rn.convert("CCXCIV");
+        Assert.assertEquals(actual, expected);
+    }
+
+    @Test
+    public void test4(){
+        int expected = 1658;
+        int actual = rn.convert("MDCLVIII");
+        Assert.assertEquals(actual, expected);
+    }
+
+    public void test5(){
+        int expected = 3999;
+        int actual = rn.convert("MMMCMXCIX");
+        Assert.assertEquals(actual, expected);
+    }
+}
+```
 
