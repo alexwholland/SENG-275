@@ -13,10 +13,13 @@ I<sub>7</sub> = { x > 300 and y > 300 and z > 300 } (All inputs are invalid) </b
 I<sub>8</sub> = { x > 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) </br>
 I<sub>9</sub> = { 1 ≤ x ≤ 300 and y > 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid) </br>
 I<sub>10</sub> = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z > 300 } (z is invalid , x is valid and y is valid) </br>
-I<sub>10</sub> = { x < 1 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
-
-
-I<sub>X</sub> = { x < 1 and 1 ≤ y ≤ 300 and x > 300 } (x is invalid and z is invalid, y is valid) </br>
+I<sub>11</sub> = { x < 1 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
+I<sub>12</sub> = { x < 1 and 1 ≤ y ≤ 300 and z < 1 } (x is invalid and z is invalid, y is valid) </br>
+I<sub>13</sub> = {1 ≤ x ≤ 300 and y < 1 and z < 1 } (y is invalid and z is invalid, x is valid) </br>
+I<sub>14</sub> = { x < 1 and 1 ≤ y ≤ 300 and z > 300 } (x is invalid and z is invalid, y is valid) </br>
+I<sub>15</sub> = { 1 ≤ x ≤ 300 and y < 1 and z > 300 } (y is invalid and z is invalid, x is valid) </br>
+I<sub>16</sub> = { x > 300 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
+I<sub>17</sub> = { x > 300 and y < 1 and z > 300 } (All inputs are invalid) </br>
 
 **Q2)** 
 
@@ -24,7 +27,7 @@ I<sub>X</sub> = { x < 1 and 1 ≤ y ≤ 300 and x > 300 } (x is invalid and z is
 
 ```
 public class FizzBuzz {
-  plubic staic String detFizzBuzz(int n) {
+  public static String detFizzBuzz(int n) {
     String result;
     if (n % 3 == 0 && n % 5 == 0)
       result = "FizzBuzz";
@@ -35,7 +38,6 @@ public class FizzBuzz {
     else
       result = n + "!";
     return result;
-    }
   }
 }
 ```
@@ -98,7 +100,7 @@ T<sub>4</sub> = MDCLVIII = 1658</br>
 T<sub>5</sub> = MCMXCIV = 1994 </br>
 T<sub>6</sub> = MMMCMXCIX = 3999 </br>
 
-**b**
+**b)**
 
 ```
 import org.junit.Assert;
