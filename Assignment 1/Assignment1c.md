@@ -30,3 +30,22 @@ Tail: </br>
 **Off-point:** `hasTail` </br>
 **In-points:** `hasTail`</br>
 **Out-points:** `!hasTail` </br>
+
+Lives: </br>
+**On-point:** `1` </br>
+**Off-point:** `0` </br>
+**In-points:** `1 ≤ numberOfLives ≤ 9`</br>
+**Out-points:** `numberOfLives > 9` and `numberOfLives < 1` </br>
+
+Nails: </br>
+**On-point:** `hasSharpNails` </br>
+**Off-point:** `!hasSharpNails` </br>
+**In-points:** `hasSharpNails`</br>
+**Out-points:** `!hasSharpNails` </br>
+
+Sound: </br>
+`sound = "miauw"`
+**On-point:** `sound` </br>
+**Off-point:** `!sound` </br>
+**In-points:** `sound`</br>
+**Out-points:** `!sound` </br>
