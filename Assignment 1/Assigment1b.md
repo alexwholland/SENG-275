@@ -54,10 +54,16 @@ To detemine the tests that can be removed we can use Test Suite Minimization.
 ```
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Before;
 
 public class FizzBuzzTesting {
-    FizzBuzz fb = new FizzBuzz();
+    FizzBuzz fb;
 
+    @Before
+    public void init(){
+        fb = new FizzBuzz();
+    }
+    
     @Test
     public void testFizzBuzz(){
         String expected = "FizzBuzz"; 
@@ -105,10 +111,16 @@ T<sub>6</sub> = MMMCMXCIX = 3999 </br>
 ```
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.Before:
 
 public class RomanNumeralTesting {
-    RomanNumeral rn = new RomanNumeral();
+    RomanNumeral rn;
 
+    @Before
+    public void init(){
+        rn = new RomanNumeral();
+    }
+    
     @Test
     public void test1(){
         int expected = 1;
