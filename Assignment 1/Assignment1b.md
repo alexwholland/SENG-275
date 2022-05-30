@@ -2,25 +2,25 @@
 ### Alex Holland - V00928553
 
 **Q1)** 
-
-I<sub>1</sub> = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (All inputs are valid) </br>
-I<sub>2</sub> = { x < 1 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) </br>
-I<sub>3</sub> = { 1 ≤ x ≤ 300 and y < 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid) </br>
-I<sub>4</sub> = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z < 1 } (z is invalid , x is valid and y is valid) </br>
-I<sub>5</sub> = { x < 1 and y < 1 and z < 1 } (All inputs are invalid) </br>
-I<sub>6</sub> = { x = 1 and y = 1 and z = 1 } (All inputs are valid) </br>
-I<sub>7</sub> = { x > 300 and y > 300 and z > 300 } (All inputs are invalid) </br>
-I<sub>8</sub> = { x > 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) </br>
-I<sub>9</sub> = { 1 ≤ x ≤ 300 and y > 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid) </br>
-I<sub>10</sub> = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z > 300 } (z is invalid , x is valid and y is valid) </br>
-I<sub>11</sub> = { x < 1 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
-I<sub>12</sub> = { x < 1 and 1 ≤ y ≤ 300 and z < 1 } (x is invalid and z is invalid, y is valid) </br>
-I<sub>13</sub> = {1 ≤ x ≤ 300 and y < 1 and z < 1 } (y is invalid and z is invalid, x is valid) </br>
-I<sub>14</sub> = { x < 1 and 1 ≤ y ≤ 300 and z > 300 } (x is invalid and z is invalid, y is valid) </br>
-I<sub>15</sub> = { 1 ≤ x ≤ 300 and y < 1 and z > 300 } (y is invalid and z is invalid, x is valid) </br>
-I<sub>16</sub> = { x > 300 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) </br>
-I<sub>17</sub> = { x > 300 and y < 1 and z > 300 } (All inputs are invalid) </br>
-
+```
+I1 = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (All inputs are valid)
+I2 = { x < 1 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) 
+I3 = { 1 ≤ x ≤ 300 and y < 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid)
+I4 = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z < 1 } (z is invalid , x is valid and y is valid)
+I5 = { x < 1 and y < 1 and z < 1 } (All inputs are invalid)
+I6 = { x = 1 and y = 1 and z = 1 } (All inputs are valid)
+I7 = { x > 300 and y > 300 and z > 300 } (All inputs are invalid)
+I8 = { x > 300 and 1 ≤ y ≤ 300 and 1 ≤ z ≤ 300 } (x is invalid , y is valid and z is valid) 
+I9 = { 1 ≤ x ≤ 300 and y > 300 and 1 ≤ z ≤ 300 } (y is invalid , x is valid and z is valid)
+I10 = { 1 ≤ x ≤ 300 and 1 ≤ y ≤ 300 and z > 300 } (z is invalid , x is valid and y is valid)
+I11 = { x < 1 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid)
+I12 = { x < 1 and 1 ≤ y ≤ 300 and z < 1 } (x is invalid and z is invalid, y is valid) 
+I13 = {1 ≤ x ≤ 300 and y < 1 and z < 1 } (y is invalid and z is invalid, x is valid) 
+I14 = { x < 1 and 1 ≤ y ≤ 300 and z > 300 } (x is invalid and z is invalid, y is valid)
+I15 = { 1 ≤ x ≤ 300 and y < 1 and z > 300 } (y is invalid and z is invalid, x is valid)
+I16 = { x > 300 and y < 1 and 1 ≤ z ≤ 300 } (x is invalid and y is invalid, z is valid) 
+I17 = { x > 300 and y < 1 and z > 300 } (All inputs are invalid) 
+```
 **Q2)** 
 
 **a)**
@@ -98,14 +98,14 @@ public class FizzBuzzTesting {
 **Q3)**
 
 **a)**
-
-T<sub>1</sub> = I = 1 </br>
-T<sub>2</sub> = XXXI = 31</br>
-T<sub>3</sub> = CCXCIV = 294</br>
-T<sub>4</sub> = MDCLVIII = 1658</br>
-T<sub>5</sub> = MCMXCIV = 1994 </br>
-T<sub>6</sub> = MMMCMXCIX = 3999 </br>
-
+```
+T<sub>1</sub> = I = 1 
+T<sub>2</sub> = XXXI = 31
+T<sub>3</sub> = CCXCIV = 294
+T<sub>4</sub> = MDCLVIII = 1658
+T<sub>5</sub> = MCMXCIV = 1994 
+T<sub>6</sub> = MMMCMXCIX = 3999 
+```
 **b)**
 
 ```
