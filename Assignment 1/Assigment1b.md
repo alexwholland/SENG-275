@@ -48,7 +48,7 @@ public class FizzBuzz {
 
 **c)**
 
-To detemine the tests that can be removed we can use Test Suite Minimization.
+To detemine the tests that can be removed (Test Suite Minimization), we can use Equivalence Partitioning.
 
 **d)**
 ```
