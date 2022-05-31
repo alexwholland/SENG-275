@@ -3,16 +3,22 @@
 
 **Q1)** 
 
-**1.**
+**1. C: Conformance**
 
-email id standard format: id@domain
+email id standard format: `id@domain`
 
-- No `id`, just an `@` and `domain`
-- No `@`, just an `id` and `domain`
-- No `domain`, just an `id` and `@` 
-- Just an `id`
-- Just an `@`
-- Just a `domain`
+- T1: No `id`, just an `@` and `domain`
+- T2: No `@`, just an `id` and `domain`
+- T3: No `domain`, just an `id` and `@` 
+- T4: Just an `id`
+- T5: Just an `@`
+- T6: Just a `domain`
 
-**2.** 
+**2. O: Order** 
+
+All ECE courses are prerequisites for any SENG course
+
+- Student selects ECE prerequisites before SENG
+- Student selects only ECE courses
+- Student selects only SENG courses
 
