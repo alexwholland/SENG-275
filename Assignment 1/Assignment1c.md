@@ -3,7 +3,7 @@
 
 **Q1)** 
 
-Boundry conditinos for equilateral triangle condition testing:
+Boundry conditions for equilateral triangle condition testing:
 
 ```
 Boundry 1: Floating point numbers x, y, and z must be greater then zero 
