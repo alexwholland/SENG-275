@@ -5,46 +5,58 @@
 
 Boundry conditinos for equilateral triangle condition testing:
 
-**Boundry 1:** Floating point numbers x, y, and z must be greater then zero </br>
-**Boundry 2:** Floating point numbers x, y, and z are equal to one another </br>
+```
+Boundry 1: Floating point numbers x, y, and z must be greater then zero 
+Boundry 2: Floating point numbers x, y, and z must be equal to one another
+```
 
 **Q2)**
-
-On-point: `half` </br>
-Off-point: `half-1` </br>
-In-points:`left` 0 ≤ i ≤ half - 1 </br>
-Out-points: `right` i ≥ half </br>
-
+```
+On-point: half
+Off-point: half-1
+In-points: left 0 ≤ i ≤ half - 1
+Out-points: right i ≥ half
+```
 
 **Q3)**
 
-**Legs:** </br>
-On-point: `0` </br>
-Off-point: `1` </br>
-In-points: `numberOfLegs = 2k` where `k ∈ Z` </br>
-Out-points: `numberOfLegs = 2k - 1` where `k ∈ Z` </br>
+**Legs:** 
+```
+On-point: 0 
+Off-point: 1 
+In-points: numberOfLegs = 2n where n is an integer
+Out-points: numberOfLegs = 2n - 1 where n in an integer
+```
 
-**Tail:** </br>
-On-point: `hasTail` </br>
-Off-point: `!hasTail` </br>
-In-points: `hasTail`</br>
-Out-points: `!hasTail` </br>
+**Tail:**
+```
+On-point: hasTail 
+Off-point: !hasTail 
+In-points: hasTail
+Out-points: !hasTail 
+```
 
-**Lives:** </br>
-On-point: `1` and `9` </br>
-Off-point: `0` and `10` </br>
-In-points: `1 ≤ numberOfLives ≤ 9`</br>
-Out-points: `numberOfLives > 9` and `numberOfLives < 1` </br>
+**Lives:** 
+```
+On-point: 1 and 9 
+Off-point: 0 and 10 
+In-points: 1 ≤ numberOfLives ≤ 9
+Out-points: numberOfLives > 9 and numberOfLives < 1
+```
 
-**Nails:** </br>
-On-point: `hasSharpNails` </br>
-Off-point: `!hasSharpNails` </br>
-In-points: `hasSharpNails`</br>
-Out-points: `!hasSharpNails` </br>
+**Nails:** 
+```
+On-point: hasSharpNails 
+Off-point: !hasSharpNails 
+In-points: hasSharpNails
+Out-points: !hasSharpNails
+```
 
-**Sound:** </br>
-`sound = "miauw"`
-On-point: `sound` </br>
-Off-point: `!sound` </br>
-In-points: `sound`</br>
-Out-points: `!sound` </br>
+**Sound:**
+```
+sound = "miauw"
+On-point: sound 
+Off-point: !sound 
+In-points: sound
+Out-points: !sound 
+```
