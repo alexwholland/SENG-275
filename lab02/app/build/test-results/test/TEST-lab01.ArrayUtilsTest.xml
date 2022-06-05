@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab01.ArrayUtilsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-05-25T20:08:23" hostname="LAPTOP-R9GL5HII" time="0.052">
+  <properties/>
+  <testcase name="oneElement()" classname="lab01.ArrayUtilsTest" time="0.033"/>
+  <testcase name="sorted()" classname="lab01.ArrayUtilsTest" time="0.002"/>
+  <testcase name="unsorted()" classname="lab01.ArrayUtilsTest" time="0.002"/>
+  <testcase name="sortedAAA()" classname="lab01.ArrayUtilsTest" time="0.0"/>
+  <testcase name="sayHi()" classname="lab01.ArrayUtilsTest" time="0.005"/>
+  <testcase name="arraySorted()" classname="lab01.ArrayUtilsTest" time="0.001"/>
+  <testcase name="duplicateValues()" classname="lab01.ArrayUtilsTest" time="0.001"/>
+  <testcase name="partiallySorted()" classname="lab01.ArrayUtilsTest" time="0.002"/>
+  <system-out><![CDATA[Hello from the test.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
