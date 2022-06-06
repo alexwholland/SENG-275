@@ -18,9 +18,11 @@ email id standard format: `id@domain`
 
 All ECE courses are prerequisites for any SENG course
 
-- T1: Student selects ECE prerequisites before SENG
-- T2: Student selects only ECE courses
-- T3: Student selects only SENG courses
+- T1: Student selects all ECE prerequisites before a SENG course
+- T2: Sudent selects some ECE courses before a SENG course
+- T3: A user selects ECE prerequiesites after registering for SENG courses and receiving an error
+- T4: Student selects only ECE courses
+- T5: Student selects only SENG courses
 
 **3. R: Range** 
 
