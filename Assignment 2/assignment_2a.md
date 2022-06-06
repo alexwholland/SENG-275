@@ -19,8 +19,8 @@ email id standard format: `id@domain`
 All ECE courses are prerequisites for any SENG course
 
 - T1: Student selects ECE prerequisites before SENG
-- Student selects only ECE courses
-- Student selects only SENG courses
+- T2: Student selects only ECE courses
+- T3: Student selects only SENG courses
 
 **3. R: Range** 
 
@@ -36,7 +36,8 @@ Age is between 15-70 years
 
 Login shoud be successful
 
-- T1:
+- T1: The `uname` must be a valid username in the database
+- T2: The `Pword` must be a valid password in the database
 
 **5. E: Existence** 
 
