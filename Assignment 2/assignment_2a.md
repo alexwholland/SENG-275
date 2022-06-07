@@ -20,19 +20,22 @@ All ECE courses are prerequisites for any SENG course
 
 - T1: Student selects all ECE prerequisites before a SENG course
 - T2: Sudent selects some ECE courses before a SENG course
-- T3: A user selects ECE prerequisites after registering for SENG courses and receiving an error
+- T3: A Student selects a SENG course and then selects an ECE prerequisite course
 - T4: Student selects only ECE courses
 - T5: Student selects only SENG courses
 
 **3. R: Range** 
 
-Age is between 15-70 years
+valid ages are between 15-70 years
 
 - T1: Age is `14`
-- T2: Age is `15`
-- T3: Age is `16`
-- T4: Age is `70`
-- T5: Age is `71`
+- T2: Age is minimum accepted value of `15`
+- T3: Age is maximum accepted value of `70`
+- T4: Age is `71`
+- T5: Age is the minimum humanely possible age of `0`
+
+If we are concerned with negative integers:   
+- T6: Impossible negative age of E.g. `-1` 
 
 **4. R: Reference** 
 
