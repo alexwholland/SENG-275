@@ -49,7 +49,7 @@ Login shoud be successful
 
 - T1: Registering in a course that isn't offered in a specific term
 - T2: Registering in a course with an invalid name
-- T3: Registerming in a course with an empty name
+- T3: Registering in a course with an empty name
 
 **6. C: Cardinality** 
 
