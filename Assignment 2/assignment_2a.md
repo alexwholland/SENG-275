@@ -41,8 +41,8 @@ Login shoud be successful
 - T1: The `uname` must be a valid username in the database
 - T2: The `Pword` must be a valid password in the database
 - T3: The account using `uname` and `Pword` is not currently logged in on a different machine
-- T4: Correct entry of `uname` and `Pword` give a successful login
-- T5: Incorrect entry of `uanme` and `Pword` give a unsuccesful login
+- T4: Correct entry of `uname` and `Pword` gives a successful login
+- T5: Incorrect entry of `uanme` and `Pword` gives a unsuccesful login
 
 **5. E: Existence** 
 
