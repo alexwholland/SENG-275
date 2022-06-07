@@ -20,7 +20,7 @@ All ECE courses are prerequisites for any SENG course
 
 - T1: Student selects all ECE prerequisites before a SENG course
 - T2: Sudent selects some ECE courses before a SENG course
-- T3: A user selects ECE prerequiesites after registering for SENG courses and receiving an error
+- T3: A user selects ECE prerequisites after registering for SENG courses and receiving an error
 - T4: Student selects only ECE courses
 - T5: Student selects only SENG courses
 
@@ -40,6 +40,9 @@ Login shoud be successful
 
 - T1: The `uname` must be a valid username in the database
 - T2: The `Pword` must be a valid password in the database
+- T3: The account using `uname` and `Pword` is not currently logged in on a different machine
+- T4: Correct entry of `uname` and `Pword` give a successful login
+- T5: Incorrect entry of `uanme` and `Pword` give a unsuccesful login
 
 **5. E: Existence** 
 
@@ -63,6 +66,6 @@ Assumption: A student can register in a maximum of six courses per term
 
 Let T be the time per timeout accoring to a global clock
 
-- T1: A timeout error is given if the user
+- T1: A timeout error is given if the user can not connect the
 - T2: A timeout error is given if there is a failure to connect to the databse in time T
 - T3: A timeout error is given if there is a failure to check for duplicity in the database in time T 
