@@ -66,6 +66,6 @@ Assumption: A student can register in a maximum of six courses per term
 
 Let T be the time per timeout accoring to a global clock
 
-- T1: A timeout error is given if the user can not connect the
-- T2: A timeout error is given if there is a failure to connect to the databse in time T
-- T3: A timeout error is given if there is a failure to check for duplicity in the database in time T 
+- T1: A timeout error is given if there is a failure to connect to the databse in time T
+- T2: A timeout error is given if there is a failure to check for duplicity in the database in time T 
+- T3: A timeour error is given if there is a failure to write the email id to the database in time T
