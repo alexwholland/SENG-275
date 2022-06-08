@@ -14,6 +14,16 @@ email id standard format: `id@domain`
 - T5: Just an `@`
 - T6: Just a `domain`
 
+| Test Case | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail |
+|-|-|-|-|-|-|-|
+| TC01 | Input an email id that only contains `@` and `domain` | 1. Go to www.uvic.ca <br> 2. Enter an email id that only contains `@` and `domain` | Email ID: @uvic.ca | Prompt the user that the `id` portion of their `email is` is missing | As Expected | Pass | 
+| TC02 | Input an email id that only contains `id` and `domain` | 1. Go to www.uvic.ca <br> 2. Enter and email id that only includes `id` and `domain` | Email ID: alexanderwholland.ca | Prompt the user that the `@` portion of their `email id` is missing | As expected | Pass |
+| TC03 | Input an email id that only contains `id` and `@` | 1. Go to www.uvic.ca <br> 2. Enter an email id that only contains `id` and `@` | Email ID: alexanderwholland@ | Prompt the user to input a valid email with `id@domain` | As expected | Pass |
+| TC04 | Input an email id that only contains `id` | 1. Go to www.uvic.ca <br> 2. Enter an email id that only contains `id` | Email ID: alexanderwholland | Prompt the user to input a valid email with `id@domain` | As expected | Pass |
+| TC05 | Input an email id that only contains `@` | 1. Go to www.uvic.ca <br> 2. Enter an email id that only contains `@` | Email ID: @| Prompt the user to input a valid email with `id@domain` | As expected | Pass |
+| TC06 | Input an email id that only contains `domain` | 1. Go to www.uvic.ca <br> 2. Enter an email id that only contains `domain` | Email ID: uvic.ca| Prompt the user to input a valid email with `id@domain` | As expected | Pass |
+
+              
 **2. O: Order** 
 
 All ECE courses are prerequisites for any SENG course
@@ -23,6 +33,12 @@ All ECE courses are prerequisites for any SENG course
 - T3: A Student selects a SENG course and then selects an ECE prerequisite course
 - T4: Student selects only ECE courses
 - T5: Student selects only SENG courses
+
+| Test Case | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail |
+|-|-|-|-|-|-|-|
+| TC01 | Select only an ECE course | 1. Go to www.uvic.ca/registration <br> 2. Select an ECE course | Course: ECE 242 | Registration is successful without error message | As expected | Pass |
+| TC02 | Select only a SENG course | 1. Go to www.uvic.ca/registration <br> 2. Select a SENG course | Course: SENG 321 | Registration is refused and an error message is displayed requesting the user must select prerequisite for the course | As expected | Pass |
+| TC03 | Select all ECE prerequisites before a SENG course | 1. Go to www.uvic.ca/registration <br> 2. Select a SENG course | Course: SENG 321 | Registration is refused and an error message is displayed requesting the user must select prerequisite for the course | As expected | Pass |
 
 **3. R: Range** 
 
@@ -37,6 +53,14 @@ valid ages are between 15-70 years
 If we are concerned with negative integers:   
 - T6: Impossible negative age of E.g. `-1` 
 
+| Test Case | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail |
+|-|-|-|-|-|-|-|
+| TC01 | Enter an `Age` that is less than 15 | 1. Go to the Registration page <br> 2. Enter an `Age` that is less than 15 in the Age text field | Age: 14 | Indicate that the age is invalid | As expected | Pass |
+| TC02 | Enter an `Age` of 15 | 1. Go tothe Registration page <br> 2. Enter an Age of 15 in the `Age` text field | Age: 15 | Accept the age | As expected | Pass |
+| TC03 | Enter an `Age` of 70 | 1. Go to the Registration page <br> 2. Enter an Age of 70 in the `Age` text field | Age: 70 | Accept the age  | As expected | Pass |
+| TC04 | Enter an `Age` that is greater than 70 | 1. Go to the Registration page <br> 2. Enter an Age that is greater than 70 in the `Age` text field | Age: 71 | Indicate that the age is invalid | As expected | Pass |
+| TC04 | Enter an `Age` of 0 | 1. Go to the Registration page <br> 2. Enter an Age of 0 in the `Age` text field | Age: 0 | Indicate that the age is invalid | As expected | Pass |
+
 **4. R: Reference** 
 
 Login shoud be successful
@@ -45,11 +69,20 @@ Login shoud be successful
 - T2: The `Pword` must be a valid password in the database
 - T3: The account using `uname` and `Pword` is not currently logged in on a different machine
 
+| Test Case | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail |
+|-|-|-|-|-|-|-|
+| TC01 | Enter a `uname` and `Pword` that is recognized by the database | 1. Go to the Registration page <br> 2. Enter a `uname` and `pword` that is recognized by the database | uname: alexwholland <br> Pword: testpassword123 | Initiate a successful login | As expected | Pass |
+| TC02 | Enter a `uname` and `Pword` that is NOT recognized by the database | 1. Go to the Registration page <br> 2. Enter a `uname` and `pword` that is not recognized by the database | uname: alexwholland1 <br> Pword: invalidpassword123 | Prompt the user that their login credentials are incorrect | As expected | Pass |
+
 **5. E: Existence** 
 
 - T1: Registering in a course that isn't offered in a specific term
 - T2: Registering in a course with an invalid name
 - T3: Registering in a course with an empty name
+
+| Test Case | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail |
+|-|-|-|-|-|-|-|
+| TC01 | Register for a course that isn't offered in a specific term | 1. Go to the Registration page <br> 2. Enter a course name that is not offered in the specific term | Course: SENG 310 | Indicate to the user that the course is not available in the selected term | As expected | Pass |
 
 **6. C: Cardinality** 
 
