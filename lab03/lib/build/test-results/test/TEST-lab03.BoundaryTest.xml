@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab03.BoundaryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-06-02T17:31:37" hostname="LAPTOP-R9GL5HII" time="0.106">
+  <properties/>
+  <testcase name="isNotUnsafe()" classname="lab03.BoundaryTest" time="0.021"/>
+  <testcase name="[1] 94.0" classname="lab03.BoundaryTest" time="0.024"/>
+  <testcase name="[2] 95.0" classname="lab03.BoundaryTest" time="0.002"/>
+  <testcase name="[3] 97.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[1] 74.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[2] 75.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[3] 76.0" classname="lab03.BoundaryTest" time="0.002"/>
+  <testcase name="isUnsafe()" classname="lab03.BoundaryTest" time="0.002"/>
+  <testcase name="[1] 78.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[2] 79.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[1] 86.0" classname="lab03.BoundaryTest" time="0.002"/>
+  <testcase name="[2] 87.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[1] 83.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <testcase name="[2] 82.0" classname="lab03.BoundaryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

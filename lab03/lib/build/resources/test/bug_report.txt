@@ -1,0 +1,26 @@
+Title:
+messageIsValid() returns true when 7 characters is used and motorcycle is set to false
+
+Submitter:
+Alex Holland
+
+email address:
+alexanderwholland@uvic.ca
+
+Summary of bug:
+messageIsValid() returns true when motorcycle is set to false and
+7 characters (letters or numbers) is used without the use of hyphens or spaces
+
+Expected behaviour:
+messageIsValid() returns false when 7 characters is used without hyphens or spaces and motorcycle is set to false
+
+Actual behaviour:
+messageIsValid() returns true when 7 characters is used without hyphens or spaces and motorcycle is set to false
+
+Steps to Reproduce:
+1) Pass an input of 7 characters (letters or numbers ONLY) to messageIsValid() with motorcycle set to false.
+Eg. (A1B2C3D, false)
+
+Severity:
+Critical. Users should not be able to create invalid license plates
+
