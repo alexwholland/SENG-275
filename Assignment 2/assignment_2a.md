@@ -1,5 +1,5 @@
 # Assignment 2a
-### Alex Holland - V00928553
+### Alex Holland
 
 **Q1)** 
 
