@@ -5,4 +5,4 @@
 
 **a)**
 
-![](Assignment%20images/UML.png)
+![](Assignment%20Images/UML.png)
