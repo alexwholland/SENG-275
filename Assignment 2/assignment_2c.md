@@ -9,7 +9,7 @@
 
 **b)**
 | Node | Action |
-|-|-|
+| - | - |
 | 1 | User enters a parking space ID |
 | 2 | User selctes a method of payment |
 | 3 | User selects a  payment method that is invalid <br> and is prompted to select a different method of payment |
@@ -20,3 +20,10 @@
 
 
 ![](Assignment%20Images/Activity%20Graph.png)
+
+**c)**
+| Path | 1-2-4-5-7 | 1-2-4-6-7 | 1-2-3-2-4-6-7 | 1-2-3-2-4-5-7 |
+| - | - | - | - | - |
+| Initial Conditions | The user has logged in | The user has logged in | The user has logged in | The user has logged in |
+| Test Steps | | | | |
+| Expected Result | | | | |
