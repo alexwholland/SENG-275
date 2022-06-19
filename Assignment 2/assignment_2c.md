@@ -9,7 +9,7 @@
 
 **b)**
 
-We assume that a valid payment type is `card payment` and an valid payment type is `Bitcoin`.
+We assume that a valid payment type is `card payment` and an invalid payment type is `Bitcoin`.
 | Node | Action |
 | - | - |
 | 1 | User enters a parking space ID |
@@ -25,7 +25,7 @@ We assume that a valid payment type is `card payment` and an valid payment type 
 
 **c)**
 
-We assume that a valid payment type is `card payment` and an valid payment type is `Bitcoin`.
+We assume that a valid payment type is `card payment` and an invalid payment type is `Bitcoin`.
 | Path | 1-2-4-5-7 | 1-2-4-6-7 | 1-2-3-2-4-6-7 | 1-2-3-2-4-5-7 |
 | - | - | - | - | - |
 | Initial Conditions | Parking space ID is valid <br> Valid payment type is card payment. | Parking space ID is valid <br> Valid payment type is card payment. | Parking space ID is valid <br> Valid payment type is card payment. | Parking space ID is valid <br> Valid payment type is card payment. | 
