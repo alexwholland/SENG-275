@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab04.SplittingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-06-08T18:00:49" hostname="LAPTOP-R9GL5HII" time="0.143">
+  <properties/>
+  <testcase name="[1] Checks array is null, null, false" classname="lab04.SplittingTest" time="0.117"/>
+  <testcase name="[2] Checks array is zero, [0], false" classname="lab04.SplittingTest" time="0.002"/>
+  <testcase name="[3] Checks sum%2==0, [1, 3], false" classname="lab04.SplittingTest" time="0.002"/>
+  <testcase name="[4] Checks sum%2==1, [1, 1, 3], false" classname="lab04.SplittingTest" time="0.002"/>
+  <testcase name="[5] Checks half==0, [1, 2, 3, 6], true" classname="lab04.SplittingTest" time="0.002"/>
+  <testcase name="[6] Checks half==0, [0, 0], true" classname="lab04.SplittingTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
