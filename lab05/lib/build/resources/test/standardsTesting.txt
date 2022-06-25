@@ -1,0 +1,34 @@
+Which standards tool did you use?
+
+Google Lighthouse with a Chrome Browser.
+
+
+
+Name any ONE TEST that passed, and describe why that test is important, in your own words.
+What would be the problem if the test had failed?
+
+Test that passed according to Google Lighthouse: Uses HTTPS
+
+Google Lighthouse checked this test to ensure that the SENG 275 Brightspace
+main is protected with HTTPS. HTTPS (Hypertext Transfer Protocol Secure) is an
+internet communication protocol that protects the integrity and security of data between
+the user's computer and Brightspace. Every website that collects and saves info such as passwords and
+personal information is required by Google to get HTTPS. If this test had failed there may be a security
+risk to the students and staff using the SENG 275 Brightspace page, in addition to any legal troubles
+from Google.
+
+
+
+Name any ONE TEST that failed (yellow or red) and explain why the failed test suggest
+there's a problem with the website.  Who is it a problem for?  What kinds of obstacles
+could this issue present?
+
+Test that failed according to Google Lighthouse:
+Trust and Safety - Includes front-end JavaScript libraries with known security vulnerabilities
+
+Google Lighthouse identified that some third-party scripts contain known security vulnerabilities that could
+be exploited by attackers. This is an issue for the front-end developers of Brightspace as they are
+utilizing these front-end libraries. However, the developers of these libraries should be prompted to fix them.
+Potential issues are (as suggested by Lighthouse) exploitation of the vulnerabilities by attackers.
+If the developers of these third-party libraries were unwilling to fix the issue, obstacles presented to the
+Brighspace devs would likely be to find a new libraries or live with the potential risks.

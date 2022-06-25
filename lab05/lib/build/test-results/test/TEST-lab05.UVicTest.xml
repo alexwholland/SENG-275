@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab05.UVicTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-06-22T16:13:46" hostname="LAPTOP-R9GL5HII" time="14.463">
+  <properties/>
+  <testcase name="uvicSearchButtonAppears()" classname="lab05.UVicTest" time="2.489"/>
+  <testcase name="uvicSearchTermAppears()" classname="lab05.UVicTest" time="2.799"/>
+  <testcase name="uvicPageLoads()" classname="lab05.UVicTest" time="1.925"/>
+  <testcase name="uvicSearchPhoneNumber()" classname="lab05.UVicTest" time="2.165"/>
+  <testcase name="uvicSearchResultsAppear()" classname="lab05.UVicTest" time="3.144"/>
+  <testcase name="uvicSearchBoxAppears()" classname="lab05.UVicTest" time="1.936"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 3439
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914427.890][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:47 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 27737
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914430.045][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:50 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 22270
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914432.763][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:52 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 2440
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914434.811][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:54 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 17418
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914437.001][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:57 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 47864
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1655914439.946][WARNING]: This version of ChromeDriver has not been tested with Chrome version 103.
+Jun. 22, 2022 9:13:59 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
