@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab06.InvoiceFilterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-06-29T20:38:06" hostname="LAPTOP-R9GL5HII" time="0.873">
+  <properties/>
+  <testcase name="allHighValueInvoices()" classname="lab06.InvoiceFilterTest" time="0.864"/>
+  <testcase name="someLowValueInvoices()" classname="lab06.InvoiceFilterTest" time="0.005"/>
+  <testcase name="allLowValueInvoices()" classname="lab06.InvoiceFilterTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
