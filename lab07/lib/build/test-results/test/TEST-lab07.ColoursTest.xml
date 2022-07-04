@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab07.ColoursTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-07-04T18:54:58" hostname="LAPTOP-R9GL5HII" time="0.753">
+  <properties/>
+  <testcase name="invalidRed" classname="lab07.ColoursTest" time="0.404"/>
+  <testcase name="invalidBlue" classname="lab07.ColoursTest" time="0.134"/>
+  <testcase name="pass" classname="lab07.ColoursTest" time="0.145"/>
+  <testcase name="invalidGreen" classname="lab07.ColoursTest" time="0.068"/>
+  <system-out><![CDATA[timestamp = 2022-07-04T11:54:58.434892400, ColoursTest:invalidRed = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 200        | # of all combined edge cases
+edge-cases#tried = 157        | # of edge cases tried in current run
+seed = -2454927174572495399   | random seed to reproduce generated values
+
+
+timestamp = 2022-07-04T11:54:58.580835400, ColoursTest:invalidBlue = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 200        | # of all combined edge cases
+edge-cases#tried = 154        | # of edge cases tried in current run
+seed = -4258333489385839458   | random seed to reproduce generated values
+
+
+timestamp = 2022-07-04T11:54:58.724738600, ColoursTest:pass = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 125        | # of all combined edge cases
+edge-cases#tried = 111        | # of edge cases tried in current run
+seed = -5673615324667419286   | random seed to reproduce generated values
+
+
+timestamp = 2022-07-04T11:54:58.794390900, ColoursTest:invalidGreen = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = PREVIOUS_SEED | use the previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 200        | # of all combined edge cases
+edge-cases#tried = 160        | # of edge cases tried in current run
+seed = 1248851773316372259    | random seed to reproduce generated values
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
