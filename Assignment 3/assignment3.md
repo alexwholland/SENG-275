@@ -24,6 +24,13 @@ import java.util.Random;
 public class CreateAccount {
     WebDriver browser;
 
+    // creates a randomly generated email in the form <random string><random integer>@uvic.ca
+    public static String generateEmail() {
+        Random randomGenerator = new Random();
+        int randomInt = randomGenerator.nextInt(1000);
+        return String.format("%s%s@%s", UUID.randomUUID().toString().substring(0,3), randomInt, "uvic.ca");
+    }
+
     @BeforeEach
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Alex\\chromedriver_win32\\chromedriver.exe");
@@ -37,13 +44,6 @@ public class CreateAccount {
     @AfterEach
     public void cleanUp() {
         browser.quit();
-    }
-
-    // creates a randomly generated email in the form <random string><random integer>@uvic.ca
-    public static String generateEmail() {
-        Random randomGenerator = new Random();
-        int randomInt = randomGenerator.nextInt(1000);
-        return String.format("%s%s@%s", UUID.randomUUID().toString().substring(0,3), randomInt, "uvic.ca");
     }
 
     // TC_CA_001
