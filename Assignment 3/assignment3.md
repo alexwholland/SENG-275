@@ -37,18 +37,18 @@ public class CreateAccount {
         browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
-        emailAddressInput.sendKeys(generateEmail());
     }
 
     @AfterEach
     public void cleanUp() {
-        browser.quit();
+       // browser.quit();
     }
 
     // TC_CA_001
     @Test
     public void createAccountValid() {
+        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
+        emailAddressInput.sendKeys(generateEmail());
         WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
         createAccountButton.click();
         new WebDriverWait(browser, 5)
@@ -77,6 +77,8 @@ public class CreateAccount {
     // TC_CA_002
     @Test
     public void invalidPassword(){
+        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
+        emailAddressInput.sendKeys(generateEmail());
         WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
         createAccountButton.click();
         new WebDriverWait(browser, 5)
@@ -88,7 +90,7 @@ public class CreateAccount {
         lastNameInput.sendKeys("Holland");
         // input an invalid password
         WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("invalidPassword123");
+        passwordInput.sendKeys("test");
         WebElement addressInput = browser.findElement(By.id("address1"));
         addressInput.sendKeys("123 test st.");
         WebElement cityInput = browser.findElement(By.id("city"));
@@ -112,6 +114,8 @@ public class CreateAccount {
     // TC_CA_003
     @Test
     public void wrongPostalCode(){
+        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
+        emailAddressInput.sendKeys(generateEmail());
         WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
         createAccountButton.click();
         new WebDriverWait(browser, 5)
@@ -148,8 +152,8 @@ public class CreateAccount {
     @Test
     public void emailExists(){
         // d1f403@uvic.ca is an existing email
-        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
+        WebElement emailAddressInput1 = browser.findElement(By.id("email_create"));
+        emailAddressInput1.sendKeys("d1f403@uvic.ca");
 
         WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
         createAccountButton.click();
