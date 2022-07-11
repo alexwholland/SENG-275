@@ -1,6 +1,15 @@
-# Assignment 3
+# Assignment 3 - Alex Holland
 
-CreateAccount.java Selenium automation test script:
+## Create Account
+### Description 
+A user is able to create an account with a unique email and their personal information.
+### Test Cases
+- TC_CA_001: createAccountValid
+- TC_CA_002: invalidPassword
+- TC_CA_003: wrongPostalCode
+- TC_CA_004: emailExists
+
+### CreateAccount.java Selenium automation test script:
 
 ```
 import org.openqa.selenium.By;
@@ -172,6 +181,32 @@ public class CreateAccount {
 Execution screenshot for pass/fail tests of Create Account:
 
 ![](Create%20Account/passedTests.jpg)
+
+Execution screenshot of the web application interfaces:
+
+<p align="center">
+    TC_CA_001
+</p>
+                
+![](Create%20Account/TC_CA_001.jpg)
+
+<p align="center">
+    TC_CA_002
+</p>
+                
+![](Create%20Account/TC_CA_002.jpg)
+
+<p align="center">
+    TC_CA_003
+</p>
+                
+![](Create%20Account/TC_CA_003.jpg)
+
+<p align="center">
+    TC_CA_004
+</p>
+                
+![](Create%20Account/TC_CA_004.jpg)
 
 
 
