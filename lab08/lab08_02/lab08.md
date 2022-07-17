@@ -1,8 +1,6 @@
 # Lab 8 - API Testing
 
-**a)** 
-
-Console output for your practice GET requests:
+### a) Console output for your practice GET requests:
 
 ```
 GET https://pokeapi.co/api/v2/pokemon/snorlax200
@@ -53,19 +51,21 @@ CF-RAY: 72bfa71feb0c59b0-IAD
 Content-Encoding: br
 ```
 
-**c)**
+### b) API Tests distributed from the outlined endpoints
 
-API Tests distributed from the outlined endpoints:
+**TC1:** Test for the response time to be within a specified range (200ms) 
 
-TC1: Endpoint request `https://pokeapi.co/api/v2/ability/1`
+Endpoint request: `https://pokeapi.co/api/v2/ability/1`
 
 ```
-pm.test("Body matches string", function () {
-    pm.expect(pm.response.text()).to.include("Hat im Kampf keinen Effekt.");
+pm.test("Response time is less than 200ms", () => {
+  pm.expect(pm.response.responseTime).to.be.below(200);
 });
 ```
 
-TC2: Endpoint request `https://pokeapi.co/api/v2/ability/1`
+**TC2:** Test the types of the response
+
+Endpoint request `https://pokeapi.co/api/v2/ability/1`
 
 ```
 const jsonData = pm.response.json();
@@ -83,61 +83,108 @@ pm.test("Test data type of the response", () => {
 });
 ```
 
-TC3: Endpoint request `https://pokeapi.co/api/v2/characteristic/1`
+**TC3:** Test whether the body contains a string
+
+Endpoint request: `https://pokeapi.co/api/v2/ability/1`
+
+```
+pm.test("Body matches string", function () {
+    pm.expect(pm.response.text()).to.include("Has no effect in battle.");
+});
+```
+
+**TC4:** Test whether an array contains a specific description
+
+Endpoint request: `https://pokeapi.co/api/v2/characteristic/1`
 
 ```
 const jsonData = pm.response.json();
 pm.test("Test array properties", () => {
-    const descriptionMessage = jsonData.descriptions.find
-        (m => m.description === "たべるのが　だいすき");
-    pm.expect(descriptionMessage).to.be.an("object");
-    pm.expect(jsonData.possible_values).to.include(20);
+    const descriptionValue = jsonData.descriptions.find
+        (m => m.description === "먹는 것을 제일 좋아함");
+    pm.expect(descriptionValue).to.be.an("object");
 });
 ```
 
-TC5: Endpoint request ``
+**TC5:** Test whether the location name matches
 
-**c)**
+Endpoint request `https://pokeapi.co/api/v2/location/1`
 
-Body
+```
+pm.test("Name matches string", function () {
+    pm.expect(pm.response.text()).to.include("canalave-city-area");
+});
+```
+
+**TC6:** Test for a response header having a paticular value
+
+Endpoint request `https://pokeapi.co/api/v2/location/1`
+
+```
+pm.test("Content-Type header is application/json", () => {
+  pm.expect(pm.response.headers.get('Content-Type'))
+  .to.eql('application/json; charset=utf-8');
+});
+```
+
+### c) Tests for creating, patching, and deleting a resource
+
+Testing creating a resource
+
+Request: `https://jsonplaceholder.typicode.com/posts`
+
+```
+pm.test("Response body contains", () => {
+    const responseJson = pm.response.json();
+    pm.expect(responseJson.id).to.eql(101);
+    pm.expect(responseJson.title).to.eql("foo");
+    pm.expect(responseJson.body).to.eql("bar");
+    pm.expect(responseJson.userId).to.eql(1);
+});
+```
+
+Request body:
 ```
 {
-    "title": "cat",
-    "body": "dog",
-    "userID": 1
+    "id": 101,
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
 }
 ```
 
-POST
+Testing patching a resource  
+
+Request: `https://jsonplaceholder.typicode.com/posts/1`
 
 ```
-pm.test("Object contains", () => {
+pm.test("Response body contains", () => {
     const responseJson = pm.response.json();
-    pm.expect(responseJson.title).to.eql("cat");
-    pm.expect(responseJson.body).to.eql("dog");
-    pm.expect(responseJson.userID).to.eql(1);
-    pm.expect(responseJson.id).to.eql(101);
-});
-```
-
-PATCH
-
-```
-pm.test("Object contains", () => {
-    const responseJson = pm.response.json();
-    pm.expect(responseJson.title).to.eql("cat");
-    pm.expect(responseJson.body).to.eql("dog");
-    pm.expect(responseJson.userID).to.eql(1);
+    pm.expect(responseJson.userId).to.eql(1);
     pm.expect(responseJson.id).to.eql(1);
+    pm.expect(responseJson.title).to.eql("foo");
+    pm.expect(responseJson.body).to.eql("...");
 });
 ```
 
-DELETE
+Request body:
+```
+{
+    "userId": 1,
+    "id": 1,
+    "title": "foo",
+    "body": "..."
+}
+```
+
+Testing deleting a resource 
+
+Request: `https://jsonplaceholder.typicode.com/posts/1`
 
 ```
 pm.test("Empty response body", () => {
-    var res = pm.response.json();
-    pm.expect(res).to.not.be.undefined;
+    var responseJson = pm.response.json();
+    pm.expect(responseJson).to.not.be.undefined;
 });
 ```
 
