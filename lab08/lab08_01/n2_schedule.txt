@@ -1,0 +1,5 @@
+Nurse Name: Alexander Solzhenitsyn
+Schedule Shift: 8 am to 4 pm
+Patient Number: 8
+Description Of Care: blood pressure taken and recorded
+Time Of Care: 11 a.m.
