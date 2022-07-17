@@ -1,5 +1,0 @@
-Nurse Name: Charles Dickens
-Schedule Shift: 4 pm to midnight
-Patient Number: 9
-Description Of Care: assessed for stability
-Time Of Care: 5 p.m.

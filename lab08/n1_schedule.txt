@@ -1,5 +1,0 @@
-Nurse Name: Margaret Atwood
-Schedule Shift: 8 am to 4 pm
-Patient Number: 13
-Description Of Care: assessed for stability
-Time Of Care: 10 a.m.
