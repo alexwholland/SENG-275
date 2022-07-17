@@ -1,5 +1,0 @@
-Nurse Name: Homer
-Schedule Shift: midnight to 8 am
-Patient Number: 18
-Description Of Care: blood pressure taken and recorded
-Time Of Care: 6 a.m.
