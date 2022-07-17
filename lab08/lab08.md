@@ -52,3 +52,94 @@ Server: cloudflare
 CF-RAY: 72bfa71feb0c59b0-IAD
 Content-Encoding: br
 ```
+
+**c)**
+
+API Tests distributed from the outlined endpoints:
+
+TC1: Endpoint request `https://pokeapi.co/api/v2/ability/1`
+
+```
+pm.test("Body matches string", function () {
+    pm.expect(pm.response.text()).to.include("Hat im Kampf keinen Effekt.");
+});
+```
+
+TC2: Endpoint request `https://pokeapi.co/api/v2/ability/1`
+
+```
+const jsonData = pm.response.json();
+pm.test("Test data type of the response", () => {
+    pm.expect(jsonData).to.be.an("object");
+    pm.expect(jsonData.id).to.be.a("number");
+    pm.expect(jsonData.name).to.be.a("string");
+    pm.expect(jsonData.is_main_series).to.be.a("boolean");
+    pm.expect(jsonData.generation).to.be.an("object");
+    pm.expect(jsonData.names).to.be.an("array");
+    pm.expect(jsonData.effect_entries).to.be.an("array");
+    pm.expect(jsonData.effect_changes).to.be.an("array");
+    pm.expect(jsonData.flavor_text_entries).to.be.an("array");
+    pm.expect(jsonData.pokemon).to.be.an("array");
+});
+```
+
+TC3: Endpoint request `https://pokeapi.co/api/v2/characteristic/1`
+
+```
+const jsonData = pm.response.json();
+pm.test("Test array properties", () => {
+    const descriptionMessage = jsonData.descriptions.find
+        (m => m.description === "たべるのが　だいすき");
+    pm.expect(descriptionMessage).to.be.an("object");
+    pm.expect(jsonData.possible_values).to.include(20);
+});
+```
+
+TC5: Endpoint request ``
+
+**c)**
+
+Body
+```
+{
+    "title": "cat",
+    "body": "dog",
+    "userID": 1
+}
+```
+
+POST
+
+```
+pm.test("Object contains", () => {
+    const responseJson = pm.response.json();
+    pm.expect(responseJson.title).to.eql("cat");
+    pm.expect(responseJson.body).to.eql("dog");
+    pm.expect(responseJson.userID).to.eql(1);
+    pm.expect(responseJson.id).to.eql(101);
+});
+```
+
+PATCH
+
+```
+pm.test("Object contains", () => {
+    const responseJson = pm.response.json();
+    pm.expect(responseJson.title).to.eql("cat");
+    pm.expect(responseJson.body).to.eql("dog");
+    pm.expect(responseJson.userID).to.eql(1);
+    pm.expect(responseJson.id).to.eql(1);
+});
+```
+
+DELETE
+
+```
+pm.test("Empty response body", () => {
+    var res = pm.response.json();
+    pm.expect(res).to.not.be.undefined;
+});
+```
+
+
+
