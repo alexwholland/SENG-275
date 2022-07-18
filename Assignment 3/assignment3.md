@@ -511,7 +511,7 @@ Execution screenshot of the web application interfaces:
 
 ## Add-Edit-Remove from Cart
 ### Description 
-A user is able to add, edit, or remove items from their cart.
+A user is able to add, edit, or remove items from their shopping cart.
 ### Test Cases
 - TC_ARC_001: N/A
 - TC_ARC_002: AddFromHome
