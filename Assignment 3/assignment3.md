@@ -856,7 +856,7 @@ public class AddEditRemoveFromCart {
         WebElement cart = browser.findElement(By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[3]/div/a"));
         cart.click();
 
-        assertTrue(browser.getPageSource().contains("Your shopping cart is empty."));
+        assertTrue(browser.getPageSource().contains("1 Product"));
     }
 
     // TC_ARC_011
