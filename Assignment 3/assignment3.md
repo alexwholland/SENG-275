@@ -50,68 +50,68 @@ public class CreateAccount {
 
     @AfterEach
     public void cleanUp() {
-       // browser.quit();
+        browser.quit();
     }
 
     // TC_CA_001
     @Test
     public void createAccountValid() {
-        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
-        emailAddressInput.sendKeys(generateEmail());
-        WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
-        createAccountButton.click();
+        WebElement email = browser.findElement(By.id("email_create"));
+        email.sendKeys(generateEmail());
+        WebElement create = browser.findElement(By.id("SubmitCreate"));
+        create.click();
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(By.id("customer_firstname")));
 
-        WebElement firstNameInput = browser.findElement(By.id("customer_firstname"));
-        firstNameInput.sendKeys("Alex");
-        WebElement lastNameInput = browser.findElement(By.id("customer_lastname"));
-        lastNameInput.sendKeys("Holland");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement addressInput = browser.findElement(By.id("address1"));
-        addressInput.sendKeys("123 test st.");
-        WebElement cityInput = browser.findElement(By.id("city"));
-        cityInput.sendKeys("Victoria");
-        Select stateDropdown = new Select(browser.findElement(By.id("id_state")));
-        stateDropdown.selectByIndex(1);
-        WebElement postcodeInput = browser.findElement(By.id("postcode"));
-        postcodeInput.sendKeys("12345");
-        WebElement mobilePhoneInput = browser.findElement(By.id("phone_mobile"));
-        mobilePhoneInput.sendKeys("123-456-7899");
-        WebElement registerButton = browser.findElement(By.id("submitAccount"));
-        registerButton.click();
+        WebElement firstName = browser.findElement(By.id("customer_firstname"));
+        firstName.sendKeys("Alex");
+        WebElement lastName = browser.findElement(By.id("customer_lastname"));
+        lastName.sendKeys("Holland");
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys("password123");
+        WebElement address = browser.findElement(By.id("address1"));
+        address.sendKeys("123 test st.");
+        WebElement city = browser.findElement(By.id("city"));
+        city.sendKeys("Victoria");
+        Select state = new Select(browser.findElement(By.id("id_state")));
+        state.selectByIndex(1);
+        WebElement postcode = browser.findElement(By.id("postcode"));
+        postcode.sendKeys("12345");
+        WebElement mobilePhone = browser.findElement(By.id("phone_mobile"));
+        mobilePhone.sendKeys("123-456-7899");
+        WebElement submit = browser.findElement(By.id("submitAccount"));
+        submit.click();
     }
 
     // TC_CA_002
     @Test
     public void invalidPassword(){
-        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
-        emailAddressInput.sendKeys(generateEmail());
-        WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
-        createAccountButton.click();
+        WebElement email = browser.findElement(By.id("email_create"));
+        email.sendKeys(generateEmail());
+        WebElement create = browser.findElement(By.id("SubmitCreate"));
+        create.click();
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(By.id("customer_firstname")));
 
-        WebElement firstNameInput = browser.findElement(By.id("customer_firstname"));
-        firstNameInput.sendKeys("Alex");
-        WebElement lastNameInput = browser.findElement(By.id("customer_lastname"));
-        lastNameInput.sendKeys("Holland");
+        WebElement firstName = browser.findElement(By.id("customer_firstname"));
+        firstName.sendKeys("Alex");
+        WebElement lastName = browser.findElement(By.id("customer_lastname"));
+        lastName.sendKeys("Holland");
         // input an invalid password
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("test");
-        WebElement addressInput = browser.findElement(By.id("address1"));
-        addressInput.sendKeys("123 test st.");
-        WebElement cityInput = browser.findElement(By.id("city"));
-        cityInput.sendKeys("Victoria");
-        Select stateDropdown = new Select(browser.findElement(By.id("id_state")));
-        stateDropdown.selectByIndex(1);
-        WebElement postcodeInput = browser.findElement(By.id("postcode"));
-        postcodeInput.sendKeys("12345");
-        WebElement mobilePhoneInput = browser.findElement(By.id("phone_mobile"));
-        mobilePhoneInput.sendKeys("123-456-7899");
-        WebElement registerButton = browser.findElement(By.id("submitAccount"));
-        registerButton.click();
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys("test");
+        WebElement address = browser.findElement(By.id("address1"));
+        address.sendKeys("123 test st.");
+        WebElement city = browser.findElement(By.id("city"));
+        city.sendKeys("Victoria");
+        Select state = new Select(browser.findElement(By.id("id_state")));
+        state.selectByIndex(1);
+        WebElement postcode = browser.findElement(By.id("postcode"));
+        postcode.sendKeys("12345");
+        WebElement mobilePhone = browser.findElement(By.id("phone_mobile"));
+        mobilePhone.sendKeys("123-456-7899");
+        WebElement submit = browser.findElement(By.id("submitAccount"));
+        submit.click();
 
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(
@@ -123,32 +123,32 @@ public class CreateAccount {
     // TC_CA_003
     @Test
     public void wrongPostalCode(){
-        WebElement emailAddressInput = browser.findElement(By.id("email_create"));
-        emailAddressInput.sendKeys(generateEmail());
-        WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
-        createAccountButton.click();
+        WebElement email = browser.findElement(By.id("email_create"));
+        email.sendKeys(generateEmail());
+        WebElement create = browser.findElement(By.id("SubmitCreate"));
+        create.click();
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(By.id("customer_firstname")));
 
-        WebElement firstNameInput = browser.findElement(By.id("customer_firstname"));
-        firstNameInput.sendKeys("Alex");
-        WebElement lastNameInput = browser.findElement(By.id("customer_lastname"));
-        lastNameInput.sendKeys("Holland");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement addressInput = browser.findElement(By.id("address1"));
-        addressInput.sendKeys("123 test st.");
-        WebElement cityInput = browser.findElement(By.id("city"));
-        cityInput.sendKeys("Victoria");
-        Select stateDropdown = new Select(browser.findElement(By.id("id_state")));
-        stateDropdown.selectByIndex(1);
+        WebElement firstName = browser.findElement(By.id("customer_firstname"));
+        firstName.sendKeys("Alex");
+        WebElement lastName = browser.findElement(By.id("customer_lastname"));
+        lastName.sendKeys("Holland");
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys("password123");
+        WebElement address= browser.findElement(By.id("address1"));
+        address.sendKeys("123 test st.");
+        WebElement city = browser.findElement(By.id("city"));
+        city.sendKeys("Victoria");
+        Select state = new Select(browser.findElement(By.id("id_state")));
+        state.selectByIndex(1);
         // input an invalid postal code
-        WebElement postcodeInput = browser.findElement(By.id("postcode"));
-        postcodeInput.sendKeys("123456");
-        WebElement mobilePhoneInput = browser.findElement(By.id("phone_mobile"));
-        mobilePhoneInput.sendKeys("123-456-7899");
-        WebElement registerButton = browser.findElement(By.id("submitAccount"));
-        registerButton.click();
+        WebElement postcode = browser.findElement(By.id("postcode"));
+        postcode.sendKeys("123456");
+        WebElement mobilePhone = browser.findElement(By.id("phone_mobile"));
+        mobilePhone.sendKeys("123-456-7899");
+        WebElement submit = browser.findElement(By.id("submitAccount"));
+        submit.click();
 
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(
@@ -160,12 +160,13 @@ public class CreateAccount {
     // TC_CA_004
     @Test
     public void emailExists(){
+        String email = "d1f403@uvic.ca";
         // d1f403@uvic.ca is an existing email
-        WebElement emailAddressInput1 = browser.findElement(By.id("email_create"));
-        emailAddressInput1.sendKeys("d1f403@uvic.ca");
+        WebElement create = browser.findElement(By.id("email_create"));
+        create.sendKeys(email);
 
-        WebElement createAccountButton = browser.findElement(By.id("SubmitCreate"));
-        createAccountButton.click();
+        WebElement createAcc = browser.findElement(By.id("SubmitCreate"));
+        createAcc.click();
 
         new WebDriverWait(browser, 5)
                 .until(ExpectedConditions.presenceOfElementLocated(
