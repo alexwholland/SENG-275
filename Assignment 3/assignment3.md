@@ -261,12 +261,15 @@ public class LoginFunctionality {
     // TC_LF_001
     @Test
     public void ValidCredentials(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
 
         assertEquals("My account - My Store", browser.getTitle());
     }
@@ -274,12 +277,15 @@ public class LoginFunctionality {
     // TC_LF_002
     @Test
     public void InvalidCredentials(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("invalidd1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "invalidd1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
 
         assertTrue(browser.getPageSource().contains("There is 1 error"));
     }
@@ -287,12 +293,15 @@ public class LoginFunctionality {
     // TC_LF_003
     @Test
     public void ValidEmailInvalidPassword(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("$");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "$";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
 
         assertTrue(browser.getPageSource().contains("There is 1 error"));
     }
@@ -300,12 +309,15 @@ public class LoginFunctionality {
     // TC_LF_004
     @Test
     public void InvalidEmailValidPassword(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
 
         assertTrue(browser.getPageSource().contains("There is 1 error"));
     }
@@ -322,16 +334,18 @@ public class LoginFunctionality {
     // TC_LF_006
     @Test
     public void MultipleUnsuccessfulAttempts(){
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "invalidpassword123";
         for (int i = 0; i < 10; i++) {
             if (i != 0) {
                 browser.get("http://automationpractice.com/index.php?controller=authentication");
             }
-            WebElement emailAddressInput = browser.findElement(By.id("email"));
-            emailAddressInput.sendKeys("d1f403@uvic.ca");
-            WebElement passwordInput = browser.findElement(By.id("passwd"));
-            passwordInput.sendKeys("invalidpassword123");
-            WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-            signInButton.click();
+            WebElement email = browser.findElement(By.id("email"));
+            email.sendKeys(emailInput);
+            WebElement password = browser.findElement(By.id("passwd"));
+            password.sendKeys(passwordInput);
+            WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+            signIn.click();
         }
         assertTrue(browser.getPageSource().contains("There is 1 error"));
     }
@@ -339,37 +353,42 @@ public class LoginFunctionality {
     // TC_LF_007
     @Test
     public void BrowsingBack(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
 
-        boolean loginContains = browser.getPageSource().contains("Alex Holland");
-        WebElement homeButton = browser.findElement(
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
+
+        boolean login = browser.getPageSource().contains("Alex Holland");
+        WebElement home = browser.findElement(
                 By.xpath("/html/body/div/div[2]/div/div[3]/div/ul/li/a/span")
         );
-        homeButton.click();
-        boolean homeContains = browser.getPageSource().contains("Alex Holland");
+        home.click();
 
-        assertEquals(loginContains, homeContains);
+        assertEquals(login, browser.getPageSource().contains("Alex Holland"));
     }
 
     // TC_LF_009
     @Test
     public void signOutCheck(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
         boolean login = browser.getPageSource().contains("Alex Holland");
-        WebElement signOutButton = browser.findElement(
+        WebElement signOut = browser.findElement(
                 By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")
         );
-        signOutButton.click();
+        signOut.click();
         boolean logout = browser.getPageSource().contains("Alex Holland");
         // reopen browser
         browser.navigate().refresh();
@@ -380,10 +399,13 @@ public class LoginFunctionality {
     // TC_LF_010
     @Test
     public void passwordHidden(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
 
         assertTrue(browser.findElements(By.id("passwd")).size() > 0);
     }
@@ -398,33 +420,39 @@ public class LoginFunctionality {
     // TC_LF_012
     @Test
     public void signOutWorks(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
         assertTrue(browser.getPageSource().contains("Alex Holland"));
-        WebElement signOutButton = browser.findElement(
+        WebElement signOut = browser.findElement(
                 By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")
         );
-        signOutButton.click();
+        signOut.click();
         assertFalse(browser.getPageSource().contains("Alex Holland"));
     }
 
     // TC_LF_013
     @Test
     public void signOutGoBack(){
-        WebElement emailAddressInput = browser.findElement(By.id("email"));
-        emailAddressInput.sendKeys("d1f403@uvic.ca");
-        WebElement passwordInput = browser.findElement(By.id("passwd"));
-        passwordInput.sendKeys("password123");
-        WebElement signInButton = browser.findElement(By.id("SubmitLogin"));
-        signInButton.click();
-        WebElement signOutButton = browser.findElement(
+        String emailInput = "d1f403@uvic.ca";
+        String passwordInput = "password123";
+
+        WebElement email = browser.findElement(By.id("email"));
+        email.sendKeys(emailInput);
+        WebElement password = browser.findElement(By.id("passwd"));
+        password.sendKeys(passwordInput);
+        WebElement signIn = browser.findElement(By.id("SubmitLogin"));
+        signIn.click();
+        WebElement signOut = browser.findElement(
                 By.xpath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[2]/a")
         );
-        signOutButton.click();
+        signOut.click();
 
         assertEquals("Login - My Store", browser.getTitle());
     }
