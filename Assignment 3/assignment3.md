@@ -1021,7 +1021,7 @@ Execution screenshot of the web application interfaces:
     TC_ARC_011
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_01.jpg)
+![](AddEditRemoveFromCart/TC_ARC_011.jpg)
 
 <p align="center">
     TC_ARC_012
