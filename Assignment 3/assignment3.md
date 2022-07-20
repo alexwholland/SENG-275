@@ -482,7 +482,7 @@ Execution screenshot of the web application interfaces:
     TC_LF_003
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179887941-a509934d-5f06-4af6-bfe5-b8194d167d5c.png)
+![image](https://user-images.githubusercontent.com/64433812/180020814-503d691a-a097-4ff2-a2bb-bef25cb15cf2.png)
 
 <p align="center">
     TC_LF_004
