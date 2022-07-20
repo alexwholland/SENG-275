@@ -181,7 +181,7 @@ public class CreateAccount {
 
 Execution screenshot for pass/fail tests of Create Account:
 
-![](Create%20Account/passedTests.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179867530-5e2e6d16-888e-4a3d-a83e-2260ac38f133.png)
 
 Execution screenshot of the web application interfaces:
 
@@ -189,25 +189,25 @@ Execution screenshot of the web application interfaces:
     TC_CA_001
 </p>
                 
-![](Create%20Account/TC_CA_001.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179867756-1a0516ff-cab4-4af3-b350-39ad3946d0b6.png)
 
 <p align="center">
     TC_CA_002
 </p>
                 
-![](Create%20Account/TC_CA_002.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179867818-389aaa10-2b48-40d5-a692-222a00337006.png)
 
 <p align="center">
     TC_CA_003
 </p>
                 
-![](Create%20Account/TC_CA_003.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179867842-0f889503-3da4-416f-a04b-3c572e5ac078.png)
 
 <p align="center">
     TC_CA_004
 </p>
                 
-![](Create%20Account/TC_CA_004.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179867867-d2273ead-f125-4835-82f8-00d8cf54b54e.png)
 
 
 ## Login/Logout Functionality 
@@ -537,6 +537,7 @@ Execution screenshot of the web application interfaces:
 </p>
 
 ![](Login%20Functionality/TC_LF_013.jpg)
+
 
 ## Add-Edit-Remove from Cart
 ### Description 
