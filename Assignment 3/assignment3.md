@@ -462,7 +462,7 @@ public class LoginFunctionality {
 
 Execution screenshot for pass/fail tests of Login Functionality:
 
-![](Login%20Functionality/passedTests.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869198-1cafa63b-81cb-4b31-adfd-6deef061a840.png)
 
 Execution screenshot of the web application interfaces:
 
@@ -470,73 +470,68 @@ Execution screenshot of the web application interfaces:
     TC_LF_001
 </p>
 
-![](Login%20Functionality/TC_LF_001.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869220-b8eb9524-f53d-4a70-952d-964f30150a33.png)
 
 <p align="center">
     TC_LF_002
 </p>
 
-![](Login%20Functionality/TC_LF_002.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869259-193e73f3-a409-4c72-a34d-feb28fe198ef.png)
 
 <p align="center">
     TC_LF_003
 </p>
 
-![](Login%20Functionality/TC_LF_003.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179870037-2d989bc7-f114-4d53-92e9-35cdb94752be.png)
 
 <p align="center">
     TC_LF_004
 </p>
-
-![](Login%20Functionality/TC_LF_004.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869696-fffb0f63-a9a5-482c-9f46-e85f800a9974.png)
 
 <p align="center">
     TC_LF_005
 </p>
-
-![](Login%20Functionality/TC_LF_005.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869338-074898c2-df99-44e8-a71c-2e34499ae544.png)
 
 <p align="center">
     TC_LF_006
 </p>
 
-![](Login%20Functionality/TC_LF_006.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869352-451f1e19-86e1-42b6-949b-8b3d6f9a5dff.png)
 
 <p align="center">
     TC_LF_007
 </p>
-
-![](Login%20Functionality/TC_LF_007.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869368-2fadb674-c364-4267-b701-a443ff4d4662.png)
 
 <p align="center">
     TC_LF_009
 </p>
 
-![](Login%20Functionality/TC_LF_009.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869399-a91d078f-753e-4e62-b7d3-4eb633b938e0.png)
 
 <p align="center">
     TC_LF_010
 </p>
-
-![](Login%20Functionality/TC_LF_010.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869439-702253f8-70cd-43d2-8f35-b7cbc2519c33.png)
 
 <p align="center">
     TC_LF_011
 </p>
 
-![](Login%20Functionality/TC_LF_011.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869463-53d0f0f5-1c06-4895-859c-447650136020.png)
 
 <p align="center">
     TC_LF_012
 </p>
-
-![](Login%20Functionality/TC_LF_012.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869481-b785379d-5956-465e-93ab-2d66f0a01ba9.png)
 
 <p align="center">
     TC_LF_013
 </p>
 
-![](Login%20Functionality/TC_LF_013.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179869501-d5962d58-e95f-4eeb-b090-9d1ba74d9635.png)
 
 
 ## Add-Edit-Remove from Cart
