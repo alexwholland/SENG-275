@@ -189,25 +189,25 @@ Execution screenshot of the web application interfaces:
     TC_CA_001
 </p>
                 
-![image](https://user-images.githubusercontent.com/64433812/179867756-1a0516ff-cab4-4af3-b350-39ad3946d0b6.png)
+![image](https://user-images.githubusercontent.com/64433812/179886730-605a9685-f5a4-4363-8542-9340a2e90b4b.png)
 
 <p align="center">
     TC_CA_002
 </p>
                 
-![image](https://user-images.githubusercontent.com/64433812/179867818-389aaa10-2b48-40d5-a692-222a00337006.png)
+![image](https://user-images.githubusercontent.com/64433812/179886762-4256295a-ec80-4818-aafe-25ab89cba77f.png)
 
 <p align="center">
     TC_CA_003
 </p>
                 
-![image](https://user-images.githubusercontent.com/64433812/179867842-0f889503-3da4-416f-a04b-3c572e5ac078.png)
+![image](https://user-images.githubusercontent.com/64433812/179886952-a0c183aa-7f42-4961-9e6a-3e197c836f7a.png)
 
 <p align="center">
     TC_CA_004
 </p>
                 
-![image](https://user-images.githubusercontent.com/64433812/179867867-d2273ead-f125-4835-82f8-00d8cf54b54e.png)
+![image](https://user-images.githubusercontent.com/64433812/179886993-a9f32078-7a2e-4053-aa82-2450124b0efa.png)
 
 
 ## Login/Logout Functionality 
@@ -462,7 +462,7 @@ public class LoginFunctionality {
 
 Execution screenshot for pass/fail tests of Login Functionality:
 
-![image](https://user-images.githubusercontent.com/64433812/179869198-1cafa63b-81cb-4b31-adfd-6deef061a840.png)
+![image](https://user-images.githubusercontent.com/64433812/179887508-aa1b7c2c-b73e-48b7-85ed-26523b79ae1a.png)
 
 Execution screenshot of the web application interfaces:
 
@@ -470,68 +470,73 @@ Execution screenshot of the web application interfaces:
     TC_LF_001
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869220-b8eb9524-f53d-4a70-952d-964f30150a33.png)
+![image](https://user-images.githubusercontent.com/64433812/179887668-b058335e-8bc9-483d-b9d4-11ce2c5c0461.png)
 
 <p align="center">
     TC_LF_002
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869259-193e73f3-a409-4c72-a34d-feb28fe198ef.png)
+![image](https://user-images.githubusercontent.com/64433812/179887732-0f09fe17-7e30-4d0f-8242-2ed7451d45e1.png)
 
 <p align="center">
     TC_LF_003
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179870037-2d989bc7-f114-4d53-92e9-35cdb94752be.png)
+![image](https://user-images.githubusercontent.com/64433812/179887941-a509934d-5f06-4af6-bfe5-b8194d167d5c.png)
 
 <p align="center">
     TC_LF_004
 </p>
+
 ![image](https://user-images.githubusercontent.com/64433812/179869696-fffb0f63-a9a5-482c-9f46-e85f800a9974.png)
 
 <p align="center">
     TC_LF_005
 </p>
-![image](https://user-images.githubusercontent.com/64433812/179869338-074898c2-df99-44e8-a71c-2e34499ae544.png)
+
+![image](https://user-images.githubusercontent.com/64433812/179887997-25f5d7a4-a118-4f8e-bad8-ecda70dbc60c.png)
 
 <p align="center">
     TC_LF_006
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869352-451f1e19-86e1-42b6-949b-8b3d6f9a5dff.png)
+![image](https://user-images.githubusercontent.com/64433812/179888030-3c159ade-d78e-4f5c-8fd7-9a8a08e92d15.png)
 
 <p align="center">
     TC_LF_007
 </p>
-![image](https://user-images.githubusercontent.com/64433812/179869368-2fadb674-c364-4267-b701-a443ff4d4662.png)
+
+![image](https://user-images.githubusercontent.com/64433812/179888058-76afde53-5883-4d77-b8d6-618ce3daecf5.png)
 
 <p align="center">
     TC_LF_009
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869399-a91d078f-753e-4e62-b7d3-4eb633b938e0.png)
+![image](https://user-images.githubusercontent.com/64433812/179888110-ece36d02-ccd3-4923-88f5-396e9bc77d17.png)
 
 <p align="center">
     TC_LF_010
 </p>
-![image](https://user-images.githubusercontent.com/64433812/179869439-702253f8-70cd-43d2-8f35-b7cbc2519c33.png)
+
+![image](https://user-images.githubusercontent.com/64433812/179888157-2c3269c7-6545-4b2e-aa36-4f368f87d6d0.png)
 
 <p align="center">
     TC_LF_011
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869463-53d0f0f5-1c06-4895-859c-447650136020.png)
+![image](https://user-images.githubusercontent.com/64433812/179888196-a2a2850d-17a0-4581-908f-57a7f0abf620.png)
 
 <p align="center">
     TC_LF_012
 </p>
-![image](https://user-images.githubusercontent.com/64433812/179869481-b785379d-5956-465e-93ab-2d66f0a01ba9.png)
+
+![image](https://user-images.githubusercontent.com/64433812/179888221-b1c4cb73-4532-4424-b354-e38942b3ae71.png)
 
 <p align="center">
     TC_LF_013
 </p>
 
-![image](https://user-images.githubusercontent.com/64433812/179869501-d5962d58-e95f-4eeb-b090-9d1ba74d9635.png)
+![image](https://user-images.githubusercontent.com/64433812/179888240-70aed91f-88c6-4b5b-9959-dab6faf65749.png)
 
 
 ## Add-Edit-Remove from Cart
@@ -955,7 +960,7 @@ public class AddEditRemoveFromCart {
 
 Execution screenshot for pass/fail tests of Add Edit Remove From:
 
-![](AddEditRemoveFromCart/passedTests.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888430-1c0d838b-f656-45af-ba7c-a90c08f83ffc.png)
 
 Execution screenshot of the web application interfaces:
 
@@ -963,65 +968,65 @@ Execution screenshot of the web application interfaces:
     TC_ARC_002
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_002.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888453-037371e6-9cda-4c6f-b585-c5ce014222dc.png)
 
 <p align="center">
     TC_ARC_003
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_003.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888490-207a7854-1196-4835-91d2-de6db12806d2.png)
 
 <p align="center">
     TC_ARC_004
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_004.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888527-36ee695f-2253-419c-982c-3280fba393ae.png)
 
 <p align="center">
     TC_ARC_005
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_005.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888558-8c003f96-b8dd-4e89-96fe-d07a0ca8b169.png)
 
 <p align="center">
     TC_ARC_006
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_006.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888586-27206573-476b-4f09-b35b-c8c4d3890216.png)
 
 <p align="center">
     TC_ARC_007
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_007.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888636-7d5f47af-2452-486b-9684-a5273871302e.png)
 
 <p align="center">
     TC_ARC_008
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_008.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888668-4821bc35-8497-467a-b157-e64e8d066cc1.png)
 
 <p align="center">
     TC_ARC_009
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_009.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888686-bda8bfcc-a316-401e-8555-1f751470efbe.png)
 
 <p align="center">
     TC_ARC_010
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_010.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888709-228058a8-3245-4738-8003-d9eace3683bf.png)
 
 <p align="center">
     TC_ARC_011
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_011.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888739-e6c571ac-5804-4e7b-8928-77cee6f9abc3.png)
 
 <p align="center">
     TC_ARC_012
 </p>
 
-![](AddEditRemoveFromCart/TC_ARC_012.jpg)
+![image](https://user-images.githubusercontent.com/64433812/179888769-601fce73-c368-4ff6-8f52-085dcead3569.png)
 
